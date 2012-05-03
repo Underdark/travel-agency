@@ -31,7 +31,7 @@
   position:relative;
   display:block;
   width: 450px;
-  height: 210px;
+  height: 250px;
   margin:0 auto;
   overflow:hidden;
 }
@@ -39,7 +39,7 @@
   position:relative;
   display:block;
   width: 450px;
-  height: 210px;
+  height: 250px;
   margin: 0;
   padding: 0;
   overflow:hidden;
@@ -76,7 +76,7 @@
 }
 
 .article p {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .article img {
@@ -89,7 +89,7 @@
 
 .cs_leftBtn, .cs_rightBtn {
   position:absolute;
-  top: 30px;
+  top: 50px;
   padding:0;
   z-index:10000;
 }
