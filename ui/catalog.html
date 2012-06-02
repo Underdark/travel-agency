@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Туристическое агентство</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.ennui.contentslider.js"></script>
+    <script type="text/javascript" src="js/jquery.msAccordion.compressed.js"></script>
+
+<link href="css_pirobox/white/style.css" media="screen" title="white" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function showResorts(container) {
+        var hidden = $(container).siblings().css('display') == 'none';
+        if (!hidden) {
+            $(container).siblings().hide();
+            $(container).animate({width:'+=600', height:'100%'},500, function() {
+                $('#countryResorts').show();
+            });
+        } else {
+            $('#countryResorts').hide();
+            $(container).animate({width:'-=600', height:'250px'},500, function() {
+                $(container).siblings().show();
+            });
+        }
+    }
+
+    $(document).ready(function () {
+        $("#accordion").msAccordion({defaultid:0, vertical:true});
+    });
+
+
+</script>
+</head>
+
+<body>
+
+<div id="header_wrapper">
+	<div id="header">
+
+		<div id="site_title">
+            <h1><a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a></h1>
+        </div>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Подбор тура</a></li>
+                <li><a href="catalog.html">Каталог отелей</a></li>
+                <li><a href="#" class="current">Справочник</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>  <!-- end of menu -->
+
+        <div class="cleaner"></div>
+	</div> <!-- end of header -->
+</div> <!-- end of header_wrapper -->
+
+<div id="content_wrapper">
+	<div id="content">
+    	
+        <h1>Каталог</h1>
+        
+<div id="catalog">
+                    <ul>
+                        <li id="country_1" onclick="showResorts(this)">
+                            <img src="images/gallery/image_01.jpg"/>
+                            <h5>Австрия</h5>
+                            <p>Курорты : 10</p>
+                            <p>Австрия славится тем, что число туристов, приезжающих в эту страну, с каждым годом только увеличивается. Действительно, эта уникальная страна может предложить великолепный отдых на любой вкус.</p>
+                        </li>
+                        <li id="country_2" onclick="showResorts(this)">
+                            <img src="images/gallery/image_02.jpg"/>
+                            <h5>Австрия</h5>
+                            <p>Курорты : 10</p>
+                            <p>Австрия славится тем, что число туристов, приезжающих в эту страну, с каждым годом только увеличивается. Действительно, эта уникальная страна может предложить великолепный отдых на любой вкус.</p>
+                        </li>
+                        <li id="country_3" onclick="showResorts(this)">
+                            <img src="images/gallery/image_03.jpg"/>
+                            <h5>Австрия</h5>
+                            <p>Курорты : 10</p>
+                            <p>Австрия славится тем, что число туристов, приезжающих в эту страну, с каждым годом только увеличивается. Действительно, эта уникальная страна может предложить великолепный отдых на любой вкус.</p>
+                        </li>
+                        <li id="country_4" onclick="showResorts(this)">
+                            <img src="images/gallery/image_04.jpg"/>
+                            <h5>Австрия</h5>
+                            <p>Курорты : 10</p>
+                            <p>Австрия славится тем, что число туристов, приезжающих в эту страну, с каждым годом только увеличивается. Действительно, эта уникальная страна может предложить великолепный отдых на любой вкус.</p>
+                        </li>
+                        <li id="country_5" onclick="showResorts(this)">
+                            <img src="images/gallery/image_05.jpg"/>
+                            <h5>Австрия</h5>
+                            <p>Курорты : 10</p>
+                            <p>Австрия славится тем, что число туристов, приезжающих в эту страну, с каждым годом только увеличивается. Действительно, эта уникальная страна может предложить великолепный отдых на любой вкус.</p>
+                        </li>
+                        <li id="country_6" onclick="showResorts(this)">
+                            <img src="images/gallery/image_06.jpg"/>
+                            <h5>Австрия</h5>
+                            <p>Курорты : 10</p>
+                            <p>Австрия славится тем, что число туристов, приезжающих в эту страну, с каждым годом только увеличивается. Действительно, эта уникальная страна может предложить великолепный отдых на любой вкус.</p>
+                        </li>
+
+                    </ul>
+                    <div class="resorts_list" id="countryResorts" style="display:none; ">
+                        <div id="accordion" class="accordionWrapper">
+                            <div class="set">
+                                <div class="title">Курорт 1</div>
+                                <div class="content"><img src="images/hotels.jpg" alt=""> dfjsdhsdkfhsd fjksdhfkjsdhfsdkjfhdsjkfh sdjkfsdh fkjsdhfkjdshkjdfh</div>
+                            </div>
+                            <div class="set">
+                                <div class="title">Курорт 2</div>
+                                <div class="content">Курорт 2 sddsfdsf</div>
+                            </div>
+                            <div class="set">
+                                <div class="title">Курорт 3</div>
+                                <div class="content">Курорт 3 sdlfksjfklsfjsdklfjdsklfjdsfkls</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+<div class="cleaner"></div>
+                </div>
+    
+    	<div class="cleaner"></div>
+	</div> <!-- end of content -->
+</div> <!-- end of content_wrapper -->
+
+<div id="footer_wrapper">
+    <div id="footer">
+
+        <div class="footer_box">
+            <h3>Справочник</h3>
+            <ul class="footer_menu">
+                <li><a href="guide.html#hotels">Классификация отелей</a></li>
+                <li><a href="guide.html#rooms">Типы размещений и номеров</a></li>
+                <li><a href="guide.html#meals">Типы питания в отелях</a></li>
+                <li><a href="guide.html#visas">Визы</a></li>
+                <li><a href="#">Другие термины</a></li>
+            </ul>
+
+        </div>
+        
+        <div class="footer_box">
+        
+            <div class="footer_menu">
+                <h3>Навигация</h3>
+                <ul class="footer_menu">
+                    <li><a href="index.html" class="current">Главная</a></li>
+                    <li><a href="#">Подбор тура</a></li>
+                    <li><a href="#">Каталог отелей</a></li>
+                    <li><a href="#">Справочник</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                
+            </div>
+		</div>
+        
+        <div class="footer_box">
+        
+            <div class="footer_menu">
+
+                <h3>О нас</h3>
+
+                Туристическое агентство Travel Agency, <br />
+                г. Минск, пр. Независимости,  д. 13, офис 501<br />
+                тел/факс: +375 17 201 11 11<br />
+                <strong>Электронная почта:</strong> <a href="#">info@agency.by</a>
+                <a href="contact.html">Подробнее</a>
+
+            </div>
+            
+        </div>
+	
+    	<div class="cleaner"></div>
+    </div> <!-- end of footer -->
+</div> <!-- end of footer wrapper -->    
+
+<div id="copyright_wrapper">
+    <div id="copyright">
+
+        Copyright © 2012 <a href="#">Travel agency</a>
+
+    </div> <!-- end of copyright -->
+</div> <!-- end of copyright wrapper -->
+<script type="text/javascript">
+
+
+
+</script>
+</body>
+</html>

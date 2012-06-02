@@ -367,38 +367,40 @@ ul li {
 	padding: 5px;
 }
 
-/* gallery */
-#gallery {
+/* catalog */
+    #catalog {
 		width: 960px;
 		padding: 40px 0;
 	}
-	#gallery ul { list-style: none; margin: 0; padding: 0; }
-	#gallery ul li {
+	#catalog ul { list-style: none; margin: 0; padding: 0; }
+	#catalog ul li {
 		float: left;
 		display: inline; 
 		padding: 0;
 		margin: 0;
-		width: 245px;
-		padding: 9px;
-		margin: 0 0 40px 40px;
-		background: #1b1f29;
-		border: 1px solid #000;
+		width: 275px;
+        height: 250px;
+		padding: 5px;
+		margin: 0 0 15px 15px;
+		background: #000;
+        overflow: hidden;
+		/*border: 1px solid #000;*/
 	}
-	#gallery ul img {
-		width: 245px;
+	#catalog ul img {
+		width: 275px;
 		height: 130px;
 		border: none;
 		margin-bottom: 10px;
 	}
 	
-	#gallery ul p {
+	#catalog ul p {
 		color: #CCC;
 	}
 	
-	#gallery a {
+	#catalog a {
 		color: #fff;
 	}
-/* end of gallery */
+/* end of catalog */
 #contact_form {
 	float: left;
 	padding: 0;
@@ -505,3 +507,11 @@ ul li {
 	color: #6e6965;
 }
 /* end of copyright */
+.resorts_list {
+    padding-left: 15px;
+}
+.accordionWrapper{display:inline-block; background-color:#fff; overflow:hidden;}
+.accordionWrapper img{vertical-align:top; border:0; margin:0; padding:0}
+.accordionWrapper div{display:inline; float:left; margin:auto; width: 885px;}
+.accordionWrapper div.title{cursor:pointer; background-color:#000; color: #fff;}
+.accordionWrapper div.content{display:none;}
